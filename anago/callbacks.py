@@ -40,5 +40,5 @@ class F1score(Callback):
 
         score = f1_score(label_true, label_pred)
         print(' - f1: {:04.2f}'.format(score * 100))
-        print(classification_report(label_true, label_pred))
+        print(classification_report(label_true, label_pred, digits=3))
         logs['f1'] = score
